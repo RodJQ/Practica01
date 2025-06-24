@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: encabezado"></head>
+<body>
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 text-success fw-bold">Bienvenido a Árboles</h1>
+        <p class="lead">Descubre las especies ideales para reforestación, jardines y más.</p>
+        <a href="#" class="btn btn-success btn-lg mt-3">Explorar catálogo</a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img th:src="@{/images/arbol1.jpg}" class="card-img-top" alt="Roble Sabana">
+                <div class="card-body">
+                    <h5 class="card-title">Roble Sabana</h5>
+                    <p class="card-text">Árbol resistente, perfecto para dar sombra en áreas urbanas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img th:src="@{/images/arbol2.jpg}" class="card-img-top" alt="Corteza Amarilla">
+                <div class="card-body">
+                    <h5 class="card-title">Corteza Amarilla</h5>
+                    <p class="card-text">Popular por sus flores brillantes y su valor ornamental.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="fragments/footer :: pie"></div>
+
+</body>
+</html>
+
